@@ -1,46 +1,14 @@
-from PyQt5 import QtWidgets
-from PyQt5.QtWidgets import QApplication, QMainWindow
-import sys
+#FINISHED WITH PANDAS ERROR CUZ CAN'T READ EXCEL
+#ASK EDU IF PYTHON VERSION ON LABVIEW IS SAME AS VS CODE
+
+
 import numpy as np
+#import numpy.random as npr
 import pandas as pd
+#import matplotlib.pyplot as plt
 import joblib
-
-class MyWindow(QMainWindow):
-    wasClicked = False
-
-    def __init__(self):
-        super(MyWindow, self).__init__()
-        self.setGeometry(500, 500, 400, 400)
-        self.setWindowTitle("Code with Angie!")
-        self.initUI()
-    
-    def initUI(self):
-        self.label = QtWidgets.QLabel(self)
-        self.label.setText("My First Label")
-        self.label.move(50,50)
-
-        self.b1 = QtWidgets.QPushButton(self)
-        self.b1.setText("Browse file explorer")
-        self.b1.clicked.connect(self.clicked)
-
-    def clicked(self):
-        self.wasClicked = not self.wasClicked
-        if (self.wasClicked): 
-            self.label.setText("I've been clicked!")
-            self.update()
-        else:
-            self.label.setText("My first label")
-            self.update()
-
-    def update(self):
-        self.label.adjustSize()
-
-
-def window():
-    app = QApplication(sys.argv)
-    win = MyWindow()
-    win.show()
-    sys.exit(app.exec_())
+#from PIL import Image
+#plt.style.use('bmh')
 
 def convert_clean(new_path_type2):
 
@@ -118,15 +86,10 @@ def convert_clean(new_path_type2):
     new_df_type2["Generated Labels"] = generated_labels
 
     # Convert and export DataFrame to Excel with all columns
-    excel_file_path = "newlabelgen.xlsx" # change new file name
+    excel_file_path = new_path_type2[:-11] + "labelgen2.xlsx" # change new file name
     print(excel_file_path)
     new_df_type2.to_excel(excel_file_path, index=False)
     return excel_file_path
 
 print("hello")
-#convert_clean(r"pre-labelgenerated_test.xlsx")
-
-window()
-print("Look at the window")
-
-#convert_clean(r"C:\Users\edward.luca\Github\THC_Rat_analyis_ML\thc_data\day3\chemo\TESTday3_chemo_thc_3.27.24.rf_1.iox_clean2.xlsx")
+convert_clean(r"C:\Users\edward.luca\Github\THC_Rat_analyis_ML\thc_data\day3\chemo\TESTday3_chemo_thc_3.27.24.rf_1.iox_clean2.xlsx")

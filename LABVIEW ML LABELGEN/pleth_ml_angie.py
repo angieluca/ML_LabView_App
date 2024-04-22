@@ -86,10 +86,10 @@ def convert_clean(new_path_type2):
     new_df_type2["Generated Labels"] = generated_labels
 
     # Convert and export DataFrame to Excel with all columns
-    excel_file_path = new_path_type2[:-11] + "labelgen2.xlsx" # change new file name
+    excel_file_path = new_path_type2[:-28] + "labelgen2.xlsx" # change new file name
     print(excel_file_path)
     new_df_type2.to_excel(excel_file_path, index=False)
     return excel_file_path
 
 print("hello")
-convert_clean(r"C:\Users\edward.luca\Github\THC_Rat_analyis_ML\thc_data\day3\chemo\TESTday3_chemo_thc_3.27.24.rf_1.iox_clean2.xlsx")
+convert_clean(r"C:\Users\aluca\Github\ML_LabView_App\LABVIEW ML LABELGEN\pre-labelgenerated_test.xlsx")
