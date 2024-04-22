@@ -5,6 +5,8 @@ import numpy as np
 import pandas as pd
 import joblib
 
+#finished with working thing but only done with second video, start third: https://www.youtube.com/watch?v=FVpho_UiDAY&list=PLzMcBGfZo4-lB8MZfHPLTEHO9zJDDLpYj&index=3&ab_channel=TechWithTim
+
 class MyWindow(QMainWindow):
     wasClicked = False
 
