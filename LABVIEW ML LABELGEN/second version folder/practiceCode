@@ -1,0 +1,33 @@
+import sys
+from PyQt5.QtWidgets import QApplication, QPushButton, QFileDialog, QVBoxLayout, QWidget
+
+class FileExplorerApp(QWidget):
+    def __init__(self):
+        super().__init__()
+
+        self.initUI()
+
+    def initUI(self):
+        layout = QVBoxLayout()
+
+        self.button = QPushButton('Open File Explorer', self)
+        self.button.clicked.connect(self.openFileExplorer)
+
+        layout.addWidget(self.button)
+
+        self.setLayout(layout)
+
+        self.setWindowTitle('File Explorer')
+        self.show()
+
+    def openFileExplorer(self):
+        options = QFileDialog.Options()
+        options |= QFileDialog.DontUseNativeDialog
+        fileName, _ = QFileDialog.getOpenFileName(self, "Open File", "", "All Files (*);;Python Files (*.py)", options=options)
+        if fileName:
+            print("Selected file:", fileName)
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = FileExplorerApp()
+    sys.exit(app.exec_())
