@@ -46,8 +46,8 @@ class FileExplorerApp(QWidget):
 
             # # open label gen file depending on os
             if sys.platform.startswith('win'):
-                import os
-                os.startfile(converted_file)
+                from os import startfile
+                startfile(converted_file)
             elif sys.platform.startswith('linux') or sys.platform.startswith('darwin'):
                 import subprocess
                 subprocess.Popen(['xdg-open', converted_file])
@@ -127,7 +127,7 @@ class FileExplorerApp(QWidget):
         new_df_type2["Generated Labels"] = generated_labels
 
         # Convert and export DataFrame to Excel with all columns
-        excel_file_path = new_path_type2[:-5] + "_NEWLABELGEN.xlsx" # change new file name
+        excel_file_path = new_path_type2[:-5] + "_LABELGEN.xlsx" # change new file name
         print("\nSuccess! New labeled file:", excel_file_path, "\n")
         new_df_type2.to_excel(excel_file_path, index=False)
         return excel_file_path
