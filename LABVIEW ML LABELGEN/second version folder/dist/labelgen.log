@@ -1,0 +1,28 @@
+2024-05-03 12:30:18,436 - ERROR - An error occured during file conversion:
+Traceback (most recent call last):
+  File "pandas\compat\_optional.py", line 135, in import_optional_dependency
+  File "importlib\__init__.py", line 126, in import_module
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "PyInstaller\loader\pyimod02_importers.py", line 385, in exec_module
+  File "openpyxl\__init__.py", line 7, in <module>
+  File "PyInstaller\loader\pyimod02_importers.py", line 385, in exec_module
+  File "openpyxl\workbook\__init__.py", line 4, in <module>
+  File "PyInstaller\loader\pyimod02_importers.py", line 385, in exec_module
+  File "openpyxl\workbook\workbook.py", line 9, in <module>
+  File "PyInstaller\loader\pyimod02_importers.py", line 385, in exec_module
+  File "openpyxl\worksheet\_write_only.py", line 13, in <module>
+  File "openpyxl\\worksheet\\_writer.py", line 23, in init openpyxl.worksheet._writer
+ModuleNotFoundError: No module named 'openpyxl.cell._writer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "labelgen_ml_edu.py", line 65, in convert_clean
+  File "pandas\io\excel\_base.py", line 495, in read_excel
+  File "pandas\io\excel\_base.py", line 1567, in __init__
+  File "pandas\io\excel\_openpyxl.py", line 552, in __init__
+  File "pandas\compat\_optional.py", line 138, in import_optional_dependency
+ImportError: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
