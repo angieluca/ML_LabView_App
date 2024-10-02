@@ -112,3 +112,79 @@ Traceback (most recent call last):
   File "c:\Users\aluca\AppData\Local\anaconda3\Lib\pickle.py", line 1572, in find_class
     __import__(module, level=0)
 ModuleNotFoundError: No module named 'xgboost'
+2024-10-02 13:51:38,974 - ERROR - An error occured during file conversion:
+Traceback (most recent call last):
+  File "\\file.phhp.ufl.edu\data\home\aluca\Documents\GitHub\ML_LabView_App\LABVIEW ML LABELGEN\second version folder\labelgen_ml_edu.py", line 81, in convert_clean
+    loaded_model_type2 = joblib.load(model_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aluca\AppData\Local\anaconda3\Lib\site-packages\joblib\numpy_pickle.py", line 658, in load
+    obj = _unpickle(fobj, filename, mmap_mode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aluca\AppData\Local\anaconda3\Lib\site-packages\joblib\numpy_pickle.py", line 577, in _unpickle
+    obj = unpickler.load()
+          ^^^^^^^^^^^^^^^^
+  File "C:\Users\aluca\AppData\Local\anaconda3\Lib\pickle.py", line 1205, in load
+    dispatch[key[0]](self)
+  File "C:\Users\aluca\AppData\Local\anaconda3\Lib\pickle.py", line 1530, in load_stack_global
+    self.append(self.find_class(module, name))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aluca\AppData\Local\anaconda3\Lib\pickle.py", line 1572, in find_class
+    __import__(module, level=0)
+ModuleNotFoundError: No module named 'xgboost'
+2024-10-02 13:55:42,869 - ERROR - An error occured during file conversion:
+Traceback (most recent call last):
+  File "\\file.phhp.ufl.edu\data\home\aluca\Documents\GitHub\ML_LabView_App\LABVIEW ML LABELGEN\second version folder\labelgen_ml_edu.py", line 81, in convert_clean
+    loaded_model_type2 = joblib.load(model_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\aluca\AppData\Local\anaconda3\Lib\site-packages\joblib\numpy_pickle.py", line 658, in load
+    obj = _unpickle(fobj, filename, mmap_mode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\aluca\AppData\Local\anaconda3\Lib\site-packages\joblib\numpy_pickle.py", line 577, in _unpickle
+    obj = unpickler.load()
+          ^^^^^^^^^^^^^^^^
+  File "c:\Users\aluca\AppData\Local\anaconda3\Lib\pickle.py", line 1205, in load
+    dispatch[key[0]](self)
+  File "c:\Users\aluca\AppData\Local\anaconda3\Lib\pickle.py", line 1530, in load_stack_global
+    self.append(self.find_class(module, name))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\aluca\AppData\Local\anaconda3\Lib\pickle.py", line 1572, in find_class
+    __import__(module, level=0)
+ModuleNotFoundError: No module named 'xgboost'
+2024-10-02 13:57:06,887 - ERROR - An error occured during file conversion:
+Traceback (most recent call last):
+  File "\\file.phhp.ufl.edu\data\home\aluca\Documents\GitHub\ML_LabView_App\LABVIEW ML LABELGEN\second version folder\labelgen_ml_edu.py", line 82, in convert_clean
+    loaded_model_type2 = joblib.load(model_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\aluca\AppData\Local\anaconda3\Lib\site-packages\joblib\numpy_pickle.py", line 658, in load
+    obj = _unpickle(fobj, filename, mmap_mode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\aluca\AppData\Local\anaconda3\Lib\site-packages\joblib\numpy_pickle.py", line 577, in _unpickle
+    obj = unpickler.load()
+          ^^^^^^^^^^^^^^^^
+  File "c:\Users\aluca\AppData\Local\anaconda3\Lib\pickle.py", line 1205, in load
+    dispatch[key[0]](self)
+  File "c:\Users\aluca\AppData\Local\anaconda3\Lib\pickle.py", line 1530, in load_stack_global
+    self.append(self.find_class(module, name))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\aluca\AppData\Local\anaconda3\Lib\pickle.py", line 1572, in find_class
+    __import__(module, level=0)
+ModuleNotFoundError: No module named 'xgboost'
+2024-10-02 13:59:39,314 - ERROR - An error occured during file conversion:
+Traceback (most recent call last):
+  File "\\file.phhp.ufl.edu\data\home\aluca\Documents\GitHub\ML_LabView_App\LABVIEW ML LABELGEN\second version folder\labelgen_ml_edu.py", line 82, in convert_clean
+    loaded_model_type2 = joblib.load(model_path)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\aluca\AppData\Local\anaconda3\Lib\site-packages\joblib\numpy_pickle.py", line 658, in load
+    obj = _unpickle(fobj, filename, mmap_mode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\aluca\AppData\Local\anaconda3\Lib\site-packages\joblib\numpy_pickle.py", line 577, in _unpickle
+    obj = unpickler.load()
+          ^^^^^^^^^^^^^^^^
+  File "c:\Users\aluca\AppData\Local\anaconda3\Lib\pickle.py", line 1205, in load
+    dispatch[key[0]](self)
+  File "c:\Users\aluca\AppData\Local\anaconda3\Lib\pickle.py", line 1530, in load_stack_global
+    self.append(self.find_class(module, name))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\aluca\AppData\Local\anaconda3\Lib\pickle.py", line 1572, in find_class
+    __import__(module, level=0)
+ModuleNotFoundError: No module named 'xgboost'

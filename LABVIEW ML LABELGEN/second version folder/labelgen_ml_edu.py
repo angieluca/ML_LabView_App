@@ -41,7 +41,7 @@ class LabelGenApp(QWidget):
 
         options = QFileDialog.Options()
         options |= QFileDialog.DontUseNativeDialog
-        fileName, _ = QFileDialog.getOpenFileName(self, "Open File", "", "All Files (*);;Python Files (*.py)", options=options)
+        fileName, _ = QFileDialog.getOpenFileName(self, "Open File", "", "All Files (*);;Excel Files (*.xlsx)", options=options)
 
         if fileName:
             #print("\nSelected file:", fileName, "\n")
@@ -78,8 +78,8 @@ class LabelGenApp(QWidget):
 
             # Make predictions on the data
             model_path = resource_path('best_pleth_ml_model_type2.pkl')
-            loaded_model_type2 = joblib.load(model_path)
-            print("hey")
+            print(model_path)
+            loaded_model_type2 = joblib.load(model_path) #ERROR IS HERE!!!
             print(type(loaded_model_type2))
             pred_type2 = loaded_model_type2.predict(new_data_train_type2)
 
