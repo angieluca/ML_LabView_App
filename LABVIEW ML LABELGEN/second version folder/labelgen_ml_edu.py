@@ -79,6 +79,8 @@ class LabelGenApp(QWidget):
             # Make predictions on the data
             model_path = resource_path('best_pleth_ml_model_type2.pkl')
             loaded_model_type2 = joblib.load(model_path)
+            print("hey")
+            print(type(loaded_model_type2))
             pred_type2 = loaded_model_type2.predict(new_data_train_type2)
 
             # Create a new column to store the generated labels
